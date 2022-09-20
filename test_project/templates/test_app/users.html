@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "css\usersstyle.css" %}?{% now "U" %}" />
+</head>
+<body>
+    <header>
+        <h1> ENQUIRE </h1>
+    </header>
+    <hr> <br>
+    <div class="main">
+        <form action="" class = "form" method="post">
+            {% csrf_token %}
+            <tr class="tr">
+                <th>
+                    <label for="id_name">Name:</label>
+                </th>
+                <td>
+                    <input type="text" name="name" maxlength="255" required id="id_name">
+                </td>
+            </tr> 
+            <tr>
+                <th>
+                    <label for="id_email">Email:</label>
+                </th>
+                <td>
+                    <input type="email" name="email" maxlength="254" required id="id_email">
+                </td>
+            </tr>
+            
+            <tr>
+                <th>
+                    <label for="id_message">Message:</label>
+                </th>
+                <td>
+                    <textarea name="field_name" cols="40" rows="10" required id="id_message"></textarea>
+                </td>
+            </tr>
+            
+            <input class = "btn" type="submit" value="SUBMIT">
+        </form>
+        
+    </div>
+    <hr>
+</body>
+</html>

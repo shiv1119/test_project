@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "css\mystyle.css" %}?{% now "U" %}" />
+    <link rel="stylesheet" href="{% static "css\utilities.css" %}?{% now "U" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" 
+    integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--  Navbar -->
+    <header class="header">
+        <navbar class="nav">
+            <span class="logo">YOUR Technology</span>
+
+            <ul class="nav-items">
+                <li>
+                    <a href="#active">HOME</a>
+                </li>
+                <li>
+                    <a href="#services">SERVICES</a>
+                </li>
+                <li>
+                    <a href="#">PRICING</a>
+                </li>
+                <li>
+                    <a href="#">BLOGS</a>
+                </li>
+                <li>
+                    <a href="#">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="{% url 'users' %}">ENQUIRE</a>
+                </li>
+            </ul>
+        </navbar>
+
+        <section class="section-bg">
+        </section>
+
+        <section class="hero content">
+            <h1 class="item-1">
+                WELCOME TO YOUR TECHNOLOGY
+            </h1>
+            <p class="item-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda nam itaque dolor voluptatibus tempora? Quos eum
+                nobis ullam quisquam labore!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eius, sapiente.
+            </p>
+
+            <a href="#" class="btn-primary one">ENQUIRE</a>
+        </section>
+    </header>
+
+        {% block body_block %}
+        {% endblock %}
+    
+      
+</body>
+</html>

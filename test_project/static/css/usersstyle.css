@@ -1,0 +1,54 @@
+body {
+    background-color: #000000;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.main input {
+    padding: 15px;
+    margin:10px 0;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.main label{
+    font-size: 18px;
+}
+.main textarea {
+    padding: 15px;
+    margin:10px 0;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.main .btn {
+    background-color: #0000;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    border: 1PX solid #fff;
+    border-radius: 5px;
+}
+
+.main .btn:hover {
+    background-color: rgb(83, 82, 82);
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,150 @@
+{% extends "test_app/base.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static "css\mystyle.css" %}?{% now "U" %}" />
+<link rel="stylesheet" href="{% static "css\utilities.css" %}?{% now "U" %}" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" 
+    integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+{% block body_block %}
+<section id="services">
+    <h1 class="text-h1">WE PROVIDE A REAL WORLD TRAINING AND
+        <br>
+        DEVELOP A BEST DEVELOPER IN THE WORLD
+        <hr style="margin-top: 15px;">
+    </h1>
+    <div class="flex-box bg-primary">
+        <div class="img-container">
+            <img src="{% static  "images/company.jpg" %}" alt="">
+        </div>
+        <div class="text-container">
+            <div class="inner-text-container">
+                <h2>Training provides a way to programmers to develop their knowledge 
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis ex fugiat 
+                    reiciendis vero consequatur nesciunt mollitia, ipsum illum, eum saepe dolorum sunt ullam 
+                    rem ipsam repudiandae aliquam voluptate voluptatum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vel porro itaque,
+                     dignissimos iure quam cupiditate commodi deserunt blanditiis aliquam optio reiciendis
+                     quo repellendus quos aliquid? In aut quaerat aspernatur!</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, saepe!</p>
+            </div> 
+        </div>
+    </div>
+</section>
+<section class="main">
+    <h1>TRANING SERVICES THAT WE PROVIDE TO OUR DEVELOPER TO BE A EXPERT  </h1>
+    <section class="flex-container">
+        <div class="container">
+            <div class="div-item">
+                <h2>
+                    Full Stack Web <br>Development
+                </h2>
+                <hr>
+                <img src="{% static  "images/full-stack.png" %}" alt="">
+            </div>
+            <hr class="hr">
+            <p class="para-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus eius voluptate ut sint. Quod, mollitia odit
+                placeat voluptatem eius beatae iste perspiciatis
+                doloremque quis est aliquid amet nobis porro laborum?
+            </p>
+            <a href="#" class="btn-secondary">READ MORE</a>
+            <h3> Welcome To World Of Web Development</h3>
+            <hr class="hr">
+            <br>
+            <iframe class="video"
+                src="https://www.youtube.com/embed/8KaJRw-rfn8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="container">
+            <div class="div-item">
+                <h2>
+                    Data Science <br> Machine Learning
+                </h2>
+                <hr>
+                <img src="{% static  "images/data.png" %}" alt="" width="80px" height="64px">
+            </div>
+            <hr class="hr">
+            <p class="para-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus eius voluptate ut sint. Quod, mollitia odit
+                placeat voluptatem eius beatae iste perspiciatis
+                doloremque quis est aliquid amet nobis porro laborum?
+            </p>
+            <a href="#" class="btn-secondary">READ MORE</a>
+            <h3> Welcome To World Of DS and ML</h3>
+            <hr class="hr">
+            <br>
+            <iframe class="video"
+                src="https://www.youtube.com/embed/KRlCfahKS70"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="container">
+            <div class="div-item">
+                <h2>
+                    Cloud Computing <br> and AWS Services
+                </h2>
+                <hr>
+                <img src="{% static  "images/cloud.png" %}" alt="" width="80px" height="64px">
+            </div>
+            <hr class="hr">
+            <p class="para-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus eius voluptate ut sint. Quod, mollitia odit
+                placeat voluptatem eius beatae iste perspiciatis
+                doloremque quis est aliquid amet nobis porro laborum?
+            </p>
+            <a href="#" class="btn-secondary">READ MORE</a>
+
+            <h3> Welcome To World Of Cloud Computing</h3>
+            <hr class="hr">
+            <br>
+            <iframe class="video"
+                src="https://www.youtube.com/embed/usYySG1nbfI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+</section>
+<div>
+    <h1 class="text-h1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam.
+        <br>
+        Replace the text with your text
+        <hr style="margin-top: 15px;">
+    </h1>
+<div class="flex-box row-reverse bg-secondary">
+    <div class="img-container">
+        <img src="{% static  "images/company2.jpg" %}" alt="">
+    </div>
+    <div class="text-container">
+        <div class="inner-text-container">
+            <h2>Replace text and images with your own and make it perfect..
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis ex fugiat 
+                reiciendis vero consequatur nesciunt mollitia, ipsum illum, eum saepe dolorum sunt ullam 
+                rem ipsam repudiandae aliquam voluptate voluptatum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vel porro itaque,
+                 dignissimos iure quam cupiditate commodi deserunt blanditiis aliquam optio reiciendis
+                 quo repellendus quos aliquid? In aut quaerat aspernatur!</p>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, saepe!</p>
+        </div> 
+    </div>
+</div>
+</div>
+
+
+{% endblock %}

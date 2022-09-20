@@ -1,0 +1,121 @@
+.bg-primary {
+    background: rgb(223, 223, 223);
+}
+
+.bg-secondary {
+    background: rgb(10, 133, 109);
+}
+
+
+
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.flex-box.row-reverse {
+    flex-direction: row-reverse;
+    margin: 20px 0px;
+}
+
+.flex-box .img-container {
+    flex-basis: 50%;
+}
+.flex-box .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;  
+}
+
+.flex-box .img-container img:hover {
+    opacity: 0.8;
+}
+
+.flex-box .text-container {
+    display: flex;
+    flex-basis: 50%; 
+}
+
+.text-h1 {
+    padding: 70px 40px;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: -1px;
+    color: rgb(40, 3, 3);
+}
+
+.flex-box .text-container h2{
+    font-size: 35px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.4;
+}
+
+.flex-box .text-container p{
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 25px 40px;
+}
+
+
+
+/*  responsiveness */
+
+@media (max-width: 1000px) {
+    .hero p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .flex-container .container {
+        width: 100%;
+        height: auto;
+    }
+    .flex-container .video {
+        width: 100%;
+        height: 50vh;
+    }
+    .flex-container .btn-secondary {
+        color: white;
+        background: rgb(31, 34, 33);
+        border: 1px solid white;
+    }
+    .flex-container .btn-secondary:hover {
+        background: black;
+        color: white;
+    }
+}
+
+@media (max-width: 768px) {
+    .flex-box {
+        flex-direction: column;
+    }
+    .flex-box .img-container {
+        flex-basis: 100%;
+    }
+    .flex-box .text-container {
+        flex-basis: 100%;
+
+    }
+    .text-h1 {
+        padding: 25px 15px;
+    }
+    .flex-box .text-container h2{
+        padding: 25px 15px;
+
+    }
+    .flex-box .text-container p{
+        padding: 25px 15px;
+
+    }
+    
+}
